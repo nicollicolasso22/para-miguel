@@ -1,0 +1,114 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d8f3ff;
+    font-family: Arial, sans-serif;
+    color: #36536b;
+    text-align: center;
+}
+
+header {
+    background-color: #83c9e8;
+    padding: 35px;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 30px 15px;
+}
+
+section {
+    background-color: white;
+    max-width: 600px;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px #9ccbdc;
+}
+
+h2 {
+    color: #e58bab;
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.7;
+}
+
+.coracao {
+    display: block;
+    font-size: 55px;
+    color: #ed86a9;
+    margin-top: 15px;
+}
+
+button {
+    background-color: #f39cba;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #e77fa3;
+}
+
+#mensagem {
+    color: #e58bab;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #83c9e8;
+    color: white;
+    padding: 25px;
+}
+
+/* PERSONAGENS NAS LATERAIS */
+
+.personagem {
+    position: fixed;
+    bottom: 0;
+    width: 190px;
+    max-height: 65vh;
+    object-fit: contain;
+    object-position: bottom;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.jake {
+    left: 0;
+}
+
+.lady {
+    right: 0;
+}
+
+/* AJUSTE PARA TELAS MENORES */
+
+@media (max-width: 1000px) {
+    .personagem {
+        width: 110px;
+    }
+}
+
+@media (max-width: 750px) {
+    .personagem {
+        display: none;
+    }
+}
